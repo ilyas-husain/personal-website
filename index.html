@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+</head>
+<body style="margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #fff5f7, #fce4ec); font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-align: center;">
+
+    <!-- KARTU UTAMA -->
+    <div style="background-color: white; padding: 40px 25px; border-radius: 35px; box-shadow: 0 15px 45px rgba(0,0,0,0.1); max-width: 400px; width: 90%; border: 1px solid #ffebee; position: relative; z-index: 10;">
+      
+    <div style="margin-bottom: 10px; animation: heartBeat 2s infinite;">
+            <p style="margin: 0; font-size: 14px; color: #ff80ab; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">
+              ✨   お誕生日おめでとう、美しい  ✨
+            </p>
+            <h2 style="margin: 5px 0; font-family: 'Comic Sans MS', cursive, sans-serif; color: #ad1457; font-size: 22px;">
+                Cieee jamettt Ultah! 🎀🧸
+            </h2>
+        </div>
+   
+        
+        <!-- FOTO DI PALING ATAS (OTOMATIS BULAT & PAS SKALA) -->
+        <img src="https://i.ibb.co.com/1YkkHF9p/IMG-20250331-WA0025.jpg" 
+             alt="Birthday Person" 
+             style="width: 200px; 
+                    height: 200px; 
+                    border-radius: 50%; 
+                    object-fit: cover; 
+                    object-position: center 20%; 
+                    border: 8px solid #ff80ab; 
+                    margin: 0 auto 25px auto; 
+                    display: block;
+                    box-shadow: 0 10px 25px rgba(255, 128, 171, 0.4);">
+
+        <!-- JUDUL TEKS -->
+        <h1 style="color: #c2185b; margin: 0 0 15px 0; font-size: 30px; font-weight: 800;">Happy Birthday! 🎈</h1>
+        
+        <!-- DESKRIPSI PESAN -->
+        <p style="color: #4a148c; font-size: 16px; line-height: 1.7; margin-bottom: 30px; font-style: italic;">
+            
+yeyy HBD ya rara jamettt, semoga hari ini penuh sama kue yang gak manis, sampe-sampe kamu harus liat akuu dlu biar dapet manisnya 🤭, semoga hadiah yang kamu dapet di hari ulang tahun kamu isinya foto-foto lama yang bikin kamu malu😭. dann semoga tahun ini kamuu lebih baik dari yang sebelumnya dehh pokoknya mahh ( walaupun ga akan sebaik guwee😝😝). ya intinya smoga kamu tetep jadi diri kamu yang unik dan gak bisa ditebak, dan jangan lupa buat banyak-banyak ibadah... soalnya kalo udah lansia cepet meninggoy😭.
+
+selamat ulang tahun lagi, dan semoga semua impi mimpi kamuu bisa tercapai,sehat selalu, dilancarkan rezekinya, semoga yang disemogakan bisa tersemogakan, semoga selalu dikelilingi sama orang-orang yang baikk yaaww?? 
+        </p>
+
+  <!-- TOMBOL KEJUTAN -->
+        <button onclick="alert(' JADI TAMBAH BAU TANAH DONK,AWOKAWOKAWOK! 🫵😹😹 ')" 
+                style="background: linear-gradient(to right, #ff4081, #f50057); color: white; border: none; padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 16px; cursor: pointer; box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4); outline: none;">
+            Klik Kejutan ✨
+        </button>
+
+    </div
+
+    <!-- EFEK BALON SEDERHANA (DIPERLUKAN SEDIKIT JAVASCRIPT AGAR LUCU) -->
+    <script>
+        function buatBalon() {
+            const balon = document.createElement("div");
+            balon.innerHTML = "🎈";
+            balon.style.position = "fixed";
+            balon.style.bottom = "-50px";
+            balon.style.left = Math.random() * 100 + "vw";
+            balon.style.fontSize = (Math.random() * 20 + 20) + "px";
+            balon.style.transition = "transform 6s linear, opacity 6s";
+            balon.style.zIndex = "1";
+            document.body.appendChild(balon);
+
+            setTimeout(() => {
+                balon.style.transform = "translateY(-110vh) rotate(" + (Math.random() * 360) + "deg)";
+                balon.style.opacity = "0";
+            }, 100);
+
+            setTimeout(() => {
+                balon.remove();
+            }, 6500);
+        }
+        setInterval(buatBalon, 700);
+    </script>
+
+</body>
